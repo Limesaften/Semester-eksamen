@@ -1,0 +1,486 @@
+@font-face{
+    font-family: tekst;
+    src: url("../fonts/Regular.ttf")
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tekst, sans-serif;
+    
+}
+
+.topbar{
+    background: #af473c;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+.topbar-padding{
+    padding-top: 0;
+}
+.topbar .content{
+    text-align: right;
+}
+.topbar .content button {
+    background: #fff;
+    border-radius: 12px;
+    padding: 7px;
+    border:none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+}
+
+.headertekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.headertekst .content h1, .headertekst .content h2 {
+    color: rgba(48, 48, 48, .6);
+    
+}
+.headertekst .content h1 {
+    line-height: 20px;
+    font-family: tekst, sans-serif;
+    
+}
+.headertekst .content h2 {
+    margin: 0;
+    font-weight: 400;
+}
+.header img{
+    width: 100%;
+    max-width:100px;
+    display: block;
+    margin-left: auto;
+    
+}
+.menu .content h3{
+    text-align: center;
+}
+.menucontainer {
+    border-top: 1px solid rgba(48, 48, 48, .3);
+    border-bottom: 1px solid rgba(48, 48, 48, .3);
+    padding-bottom: 15px;
+    margin-top: 5px;
+}
+.forsidebillede{
+    max-width: 100% !important;
+    max-height: none !important; 
+    padding-top: 78px;
+}
+.nyheder h3{
+    text-align: center;
+    
+}
+.hygge {
+    text-align: center;
+}
+
+.nyheder .content h3{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.hyggebillede{
+    background: url("../img/ikonbillede.svg") no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid rgba(48, 48, 48, .3);
+    padding-bottom: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+.nyhedtekst {
+    border-bottom: 1px solid rgba(48, 48, 48, .3);
+    padding-bottom: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.nyhedtekst img {
+    max-width: 200px;
+    max-height: 200px;
+}
+.tilmelding {
+    background-color: #af473c;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    margin-top: 10px;
+}
+.tilmelding h1 {
+    color: #fff;
+}
+.tilmelding h3 {
+    color: #fff;
+    padding-top: 5px;
+}
+.footer {
+    background: linear-gradient(to right, rgba(48,48,48,1), rgba(48,48,48,.8));
+    padding: 10px 0;
+}
+.footertekst {
+    color: #fff;
+    
+}
+.footertekst h3{
+    padding-bottom: 5px;
+}
+.streg {
+    height: 2px;
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+    margin-bottom: 10px;
+}
+.infofooter{
+    text-align: justify;
+}
+.nyhedindhold {
+    border: 1px solid rgba(48, 48, 48, .3); 
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.menu a:hover{
+    border-bottom: 2px solid #af473c;
+}
+.menu a:active{
+    border-bottom: 2px solid #af473c;
+}
+
+#menu1:hover #menu1_dropdown {
+    display: block;
+}
+
+#menu2:hover #menu2_dropdown {
+    display: block;
+}
+
+.dropdown {
+    position: absolute;
+    background: #FFF;
+    width: 353px;
+    color: #000;
+    box-shadow: 0 4px 5px -2px rgba(0,0,0,.4);
+    transition: all .3s ease-in-out;
+    display: none;
+}
+
+.dropdown ul {
+    list-style: none;
+}
+
+.dropdown ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.dropdown ul li:hover {
+    background: rgba(175,71,60,.9);
+    cursor: pointer;
+    color: #fff;
+}
+.personalecontainer {
+    border-bottom: 1px solid rgba(48, 48, 48, .3);
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+}
+.personale .content{
+    text-align: center;
+}
+
+
+ /* Loginbox */ 
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #303030;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #af473c;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #af473c;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #303030;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+ /* Loginbox */ 
+
+.broedtekst{
+    color: rgba(48, 48, 48, .5);
+}
+.aabningoverskrift {
+    padding-bottom: 15px; 
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.boks1titel{
+    background-color: #EF5350;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 10px;
+    width: 125px;
+    display: block;
+    margin-left: auto;
+    margin-bottom: -6px;
+    color: #fff;
+    text-align: center;
+}
+.boks1{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #EF5350;
+    padding:10px;
+    height: 300px;
+    
+}
+.boks1 h2{
+    color: #fff;
+}
+
+.boks2titel{
+    background-color: #66BB6A;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 10px;
+    width: 125px;
+    display: block;
+    margin-left: auto;
+    margin-bottom: -6px;
+    color: #fff;
+    text-align: center;
+}
+.boks2{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding:10px;
+    background-color: #66BB6A;
+    height: 300px;
+}
+.boks2 h2{
+    color: #fff;
+}
+.boks3titel{
+    background-color: #42A5F5;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 10px;
+    width: 125px;
+    display: block;
+    margin-left: auto;
+    margin-bottom: -6px;
+    color: #fff;
+    text-align: center;
+}
+.boks3{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding:10px;
+    background-color: #42A5F5;
+    height: 300px;
+    
+}
+.boks3 h2{
+    color: #fff;
+}
+.streg2 {
+    height: 2px;
+    border-top: 2px solid #fff;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.teksttider{
+    color: #fff;
+    font-size: 22px;
+    line-height: 35px;
+    
+    
+}
+.lukningsoverskrift{
+    border-top: 1px solid rgba(48, 48, 48, .3);
+    padding-bottom: 50px; 
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.lukketekst{
+    font-size: 30px;
+    line-height: 45px;
+}
+.kortinfotekst {
+    font-size: 22px;
+    line-height: 35px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+.kortinfostreg {
+    padding-bottom: 50px; 
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.headertekstloggedin{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.headertekstloggedin .content h1{
+    color: rgba(48, 48, 48, .6);
+    line-height: 20px;
+}
+.headertekstloggedin .content h2{
+    color: rgba(48, 48, 48, .6);
+    font-weight: 400;
+}
+.nyhedform {
+    width: 100%;
+    
+}
+.nyhedform input{
+    width: 100%;
+    display: block;
+    border: 1px solid #ccc;
+    padding: .5em;
+    border-radius: 12px;
+    margin-bottom: .5em;
+}
+.nyhedform textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid #ccc;
+    padding: .5em;
+    border-radius: 12px;
+    margin-bottom: .5em;
+    min-height: 250px;
+}
+.nyhedform input[type="submit"]{
+    background: #303030;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.nyhedform input[type="text"]{
+    margin-top: 10px;
+    
+}
+.nyhedstable th{
+    text-align: left;
+}
+.nyhedsbillede{
+    max-width: 200px;
+    width: 100%;
+}
+.nyhedstekst{
+    text-align: justify;
+}
+.hyggemellemrum{
+    line-height: 20px;
+}
+.dato{
+    text-align: right;
+}
+.tabelmednyh{
+    min-height: 450px;
+}
+.tabelmednyh h5{
+    margin-bottom: 10px;
+}
+.adminbar ul{
+    border: 1px solid rgba(48, 48, 48, .3);
+    margin-bottom: 1em;
+    box-shadow: 0 5px 4px -3px rgba(0, 0, 0, .2);
+}
+.adminbar ul li{
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 5px;
+        
+}
+.adminbar ul li:hover {
+    background: rgba(175,71,60,.9);
+    cursor: pointer;
+    color: #fff;
+}
